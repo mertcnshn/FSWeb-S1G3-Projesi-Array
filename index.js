@@ -70,9 +70,10 @@ Bir dizinin tam olarak 25 çeşit olduğunu onaylayın. İşleviniz şunları ka
 
 function dizi25Cesitmi(d) {
   return d.length === 25 ? true : false;
-  dizi25Cesitmi(orjinalTatlar);
-  console.log(dizi25Cesitmi(orjinalTatlar));
 }
+
+dizi25Cesitmi(orijinalTatlar);
+console.log(dizi25Cesitmi(orijinalTatlar));
 
 //single line if su sekilde yazılır
 //return tatlar.length === 25 ? true:false;
@@ -95,7 +96,7 @@ function cesitEkle(tatlar, yeniCesit) {
   tatlar.unshift(yeniCesit);
   return tatlar;
 }
-console.log("Kakule eklendi mi?", cesitEkle(orjinalTatlar, "Kakule"));
+console.log("Kakule eklendi mi?", cesitEkle(orijinalTatlar, "Kakule"));
 
 /* Cörev 4:
 
@@ -113,7 +114,7 @@ function sonCesitiKaldir(tatlar) {
   tatlar.pop();
   return tatlar;
 }
-console.log("Son aroma kaldırıldı mı?", sonCesitiKaldir(orjinalTatlar));
+console.log("Son aroma kaldırıldı mı?", sonCesitiKaldir(orijinalTatlar));
 
 /* Görev 5:
 Dizideki belirli bir indeksteki çeşniyi döndüren bir işlev yazın.
@@ -129,7 +130,7 @@ Aşağıdakileri yapmak için aşağıdaki indekstekiCesitiGetir işlevini kulla
 function indekstekiCesitiGetir(tatlar, ind) {
   return tatlar[ind];
 }
-console.log("Indeksteki cesit", indekstekiCesitiGetir(orjinalTatlar, 2));
+console.log("Indeksteki cesit", indekstekiCesitiGetir(orijinalTatlar, 2));
 
 /* Görev 6:
 
@@ -155,7 +156,7 @@ function ismeGoreCesitCikar(dizi, alerjen) {
       return dizi;
     }
   }
-  /*indexOf ile de yapılabilir > for terine kullanılacak.
+  /*indexOf ile de yapılabilir > for yerine kullanılacak.
 const tabaktakiIndex = tabak.indexOf(lezzet);
 tabak.splice(tabaktakiIndex, 1); */
   //return buraya yazılsa da doğru ama döngü sayısı artar.
@@ -163,7 +164,7 @@ tabak.splice(tabaktakiIndex, 1); */
 
 console.log(
   "Tarcın cıkarıldı mı?",
-  ismeGoreCesitCikar(orjinalTatlar, "Tarçın")
+  ismeGoreCesitCikar(orijinalTatlar, "Tarçın")
 );
 
 /* Görev 7:
@@ -190,7 +191,7 @@ function ismeGoreFiltrele(tatlarDizisi, filtreDegeri) {
   const filtrelenmisSepeti = [];
 
   for (let i = 0; i < tatlarDizisi.length; i++) {
-    const elimdekitat = tatlarDizisi[i];
+    const elimdekiTat = tatlarDizisi[i];
     //if(tatlarDizisi[i].includes(filtreDegeri) === true)
     if (tatlarDizisi[i].includes(filtreDegeri)) {
       filtrelenmisSepeti.push(elimdekiTat);
@@ -199,7 +200,7 @@ function ismeGoreFiltrele(tatlarDizisi, filtreDegeri) {
   return filtrelenmisSepeti;
 }
 
-console.log("isme göre filtrele", ismeGoreFiltrele(orjinalTatlar, "Çikolata"));
+console.log("isme göre filtrele", ismeGoreFiltrele(orijinalTatlar, "Çikolata"));
 
 /* ALIŞTIRMA */
 
@@ -295,7 +296,7 @@ const bolgeselTatlar = [
 
 console.log(
   "Rastgele tatlar",
-  rastgeleTatlar(orjinalTatlar, yeniTatlar, mevsimlikTatlar, bolgeselTatlar)
+  rastgeleTatlar(orijinalTatlar, yeniTatlar, mevsimlikTatlar, bolgeselTatlar)
 );
 
 /* Lütfen bu satırın altındaki hiçbir şeyi değiştirmeyin */
